@@ -17,6 +17,7 @@ module ActiveStorageSupport
 
       attachment[:io] = StringIO.new(decoded_data)
       attachment[:content_type] ||= content_type(headers)
+      attachment[:filename]     ||= Time.current.to_i.to_s	
     end
 
     def content_type(headers)
