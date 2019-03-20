@@ -21,7 +21,7 @@ module ActiveStorageSupport
         class_eval <<-CODE, __FILE__, __LINE__ + 1
           def #{name}
             @active_storage_attached_#{name} ||=
-              #{type}.new("#{name}")
+              #{type}.new("#{name}", self)
           end
 
           def #{name}=(data)
