@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'active_storage_base64'
-  s.version = '0.1.4'
+  s.version = '0.1.3'
   s.summary = 'Base64 support for ActiveStorage'
   s.description = s.summary
 
@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.required_ruby_version = ">= 2.2.2"
 
   # Dependencies
-  s.add_dependency 'rails', '~> 5.2.0', '<= 6.0.0.beta3'
+  s.add_dependency 'rails', '~> 5.2.0'
 
   # Development dependencies
   s.add_development_dependency 'rubocop', '~> 0.56.0'
